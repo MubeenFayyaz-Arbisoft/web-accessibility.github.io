@@ -1,0 +1,60 @@
+<!-- Issue Note -->
+<!-- Point 1 - Never use Block Element in Inline Element otherwise the voiceover will not read the description of the image -->
+<!-- Point 2 - Always use <figcaption> for captioning <figure> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .logo-image {
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>
+      <a href="http://127.0.0.1:5500/home-main.html"> Back Home</a>
+    </h2>
+    <table border="1">
+      <caption>
+        using th as row and column headers will work.
+      </caption>
+      <tbody>
+        <tr>
+          <th>Quarter</th>
+          <th>Apples</th>
+          <th>Oranges</th>
+          <th>Bananas</th>
+        </tr>
+        <tr>
+          <th>Q1</th>
+          <td>100</td>
+          <td>200</td>
+          <td>250</td>
+        </tr>
+        <tr>
+          <th>Q2</th>
+          <td>120</td>
+          <td>180</td>
+          <td>230</td>
+        </tr>
+        <tr>
+          <th>Q3</th>
+          <td>110</td>
+          <td>120</td>
+          <td>210</td>
+        </tr>
+        <tr>
+          <th>Q4</th>
+          <td>140</td>
+          <td>150</td>
+          <td>300</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
