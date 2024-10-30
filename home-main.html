@@ -42,15 +42,7 @@
   </head>
   <body>
     <main class="d-flex flex-nowrap gap-3 align-items-stretch">
-      <aside
-        class="p-3"
-        style="
-          background-color: #643a98;
-          max-width: 280px;
-          min-width: 280px;
-          height: 100vh;
-        "
-      >
+      <aside class="p-3 d-flex flex-column sidebar" style="">
         <div class="flex-shrink-0">
           <a
             href="https://mubeenfayyaz-arbisoft.github.io/Web-Accessibility/home-main.html"
@@ -68,10 +60,12 @@
               Web Accessibility</span
             >
           </a>
+          <span class="demo-label" style="color: white">Demo Resources</span>
+
           <div
             class="accordion accordion-flush"
             id="accordionFlushExample"
-            style="border-radius: 10px; overflow: hidden"
+            style="border-radius: 10px; overflow: hidden; position: relative"
           >
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingOne">
@@ -96,7 +90,7 @@
                   <a
                     href="https://mubeenfayyaz-arbisoft.github.io/Web-Accessibility/table.html"
                     style="color: #643a98"
-                    class="font-weight-bold"
+                    class="font-weight-bold link-action"
                     >Table</a
                   >
                 </div>
@@ -161,8 +155,92 @@
             </div>
           </div>
         </div>
+        <div class="footer-link mt-auto">
+          <a
+            href="https://drive.google.com/drive/folders/1mzpfPiL1eeIeHPRQ2cEzHDLS9bU-AAp4"
+            class="link-color-white"
+            >Important Link</a
+          >
+        </div>
       </aside>
-      <section class="w-100">this is the content</section>
+      <section class="w-100 p-4 content">
+        <h1 class="main-heading mb-5">
+          Accessibility in HTML with Examples & Best Practices
+        </h1>
+        <h2 class="sub-title">Purpose</h2>
+        <p>
+          Web accessibility is guided by four key principles:
+          <strong> perceivable, operable, understandable, and robust.</strong>
+          These principles ensure that all users, regardless of their abilities
+          or disabilities, can access and interact with online content
+          effectively. The purpose of the document "Accessibility in HTML with
+          Examples and Best Practices" is to guide developers and content
+          creators in designing accessible HTML components. It provides
+          practical examples and best practices to ensure digital content is
+          usable by everyone.
+        </p>
+        <h2 class="sub-title mt-4">Web Complaince</h2>
+        <p>
+          Web accessibility compliance involves adhering to legal standards and
+          guidelines that ensure digital content is accessible to all users,
+          including those with disabilities. Laws like the Section 508 mandate
+          specific accessibility criteria, while the Web Content Accessibility
+          Guidelines (WCAG) outline best practices for creating accessible
+          content. Compliance helps organizations avoid legal issues and fosters
+          inclusivity, enhancing the user experience for a diverse audience.
+        </p>
+        <p>
+          <strong style="color: #643a98">Note*</strong>: The following documentation does not cover all of the WCAG AAA requirements. For all compliance, you can visit the provided links given in front of all four major principles: Perceivable, Operable, Understandable, and Robust.
+        </p>
+        <ul class="compliance-list">
+          <li class="compliance-item">
+            <a href="#perceivable" class="compliance-link">Perceivable</a>
+          </li>
+          <li class="compliance-item">
+            <a href="#" class="compliance-link">Operable</a>
+          </li>
+          <li class="compliance-item">
+            <a href="#" class="compliance-link">Understandable</a>
+          </li>
+          <li class="compliance-item">
+            <a href="#" class="compliance-link">Robust</a>
+          </li>
+        </ul>
+        <div id="perceivable" class="mt-5">
+          <h2 class="sub-title mt-4 d-flex gap-3">
+            Perceivable:
+            <a
+              target="_blank"
+              href="https://www.w3.org/WAI/WCAG22/quickref/?versions=2.2&currentsidebar=%23col_overview#principle1"
+              ><i class="fa fa-external-link" aria-hidden="true"></i
+            ></a>
+          </h2>
+          <ul style="list-style-type: disclosure-closed">
+            <li>
+              <strong> Guideline 1.1 – Text Alternatives </strong>Provide text
+              alternatives for any non-text content so that it can be changed
+              into other forms people need, such as large print, braille,
+              speech, symbols or simpler language.
+            </li>
+
+            <li>
+              <ul>
+                <li>
+                  <strong> 1.1.1 Non-text Content - Level A</strong> All
+                  non-text content that is presented to the user has a text
+                  alternative that serves the equivalent purpose,
+                  <a
+                    style="color: #643a98"
+                    class="font-weight-bold"
+                    href="https://mubeenfayyaz-arbisoft.github.io/Web-Accessibility/table.html"
+                    >Non-text Content Demo Link</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
   </body>
 </html>
