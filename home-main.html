@@ -14,35 +14,44 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-<link rel="shortcut icon" href="Images/accessibility-logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="Images/accessibility-logo.png"
+      type="image/x-icon"
+    />
     <style>
       .logo-image {
         width: 100%;
         max-width: 50px;
       }
-    
-      body{
-        font-family: "Roboto Slab", serif;
-      }
     </style>
-     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <main class="d-flex flex-nowrap gap-3">
-      <aside
-        class="p-3"
-        style="background-color: #643a98; width: 280px; height: 100vh"
-      >
+    <main class="d-flex flex-nowrap gap-3 align-items-stretch">
+      <aside class="p-3 d-flex flex-column sidebar" style="">
         <div class="flex-shrink-0">
           <a
-            href="/"
-            class="d-flex  align-items-center pb-2 mb-2 link-dark text-decoration-none border-bottom"
+            href="https://mubeenfayyaz-arbisoft.github.io/Web-Accessibility/home-main.html"
+            class="d-flex align-items-center pb-2 mb-2 link-dark text-decoration-none border-bottom"
           >
-            <span class="fs-5 align-items-center fw-semibold d-flex gap-3"  style="color: #fff">
+            <span
+              class="fs-5 align-items-center fw-semibold d-flex gap-3"
+              style="color: #fff"
+            >
               <img
                 src="Images/accessibility-logo.png"
                 class="logo-image"
@@ -51,8 +60,13 @@
               Web Accessibility</span
             >
           </a>
-          <div class="accordion accordion-flush" id="accordionFlushExample" style="border-radius: 10px;
-    overflow: hidden;">
+          <span class="demo-label" style="color: white">Demo Resources</span>
+
+          <div
+            class="accordion accordion-flush"
+            id="accordionFlushExample"
+            style="border-radius: 10px; overflow: hidden; position: relative"
+          >
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingOne">
                 <button
@@ -73,7 +87,12 @@
                 data-bs-parent="#accordionFlushExample"
               >
                 <div class="accordion-body">
-                  <a href="https://html-preview.github.io/?url=https://github.com/MubeenFayyaz-Arbisoft/Web-Accessibility/blob/main/table.html" style="color: #643a98;" class="font-weight-bold" >Table</a>
+                  <a
+                    href="https://mubeenfayyaz-arbisoft.github.io/Web-Accessibility/table.html"
+                    style="color: #643a98"
+                    class="font-weight-bold link-action"
+                    >Table</a
+                  >
                 </div>
               </div>
             </div>
@@ -87,7 +106,7 @@
                   aria-expanded="false"
                   aria-controls="flush-collapseTwo"
                 >
-                Images Components
+                  Images Components
                 </button>
               </h2>
               <div
@@ -114,7 +133,7 @@
                   aria-expanded="false"
                   aria-controls="flush-collapseThree"
                 >
-                Links Components
+                  Links Components
                 </button>
               </h2>
               <div
@@ -136,8 +155,167 @@
             </div>
           </div>
         </div>
+        <div class="footer-link mt-auto text-center">
+          <a
+            href="http://127.0.0.1:5500/all-tools.html"
+            class="link-color-white"
+            >Web Accessibility All Tools</a
+          >
+        </div>
       </aside>
-      <section>this is the content</section>
+      <section class="w-100 p-4 content">
+        <h1 class="main-heading mb-5">
+          Accessibility in HTML with Examples & Best Practices
+        </h1>
+        <h2 class="sub-title">Purpose</h2>
+        <p>
+          Web accessibility is guided by four key principles:
+          <strong> perceivable, operable, understandable, and robust.</strong>
+          These principles ensure that all users, regardless of their abilities
+          or disabilities, can access and interact with online content
+          effectively. The purpose of the document "Accessibility in HTML with
+          Examples and Best Practices" is to guide developers and content
+          creators in designing accessible HTML components. It provides
+          practical examples and best practices to ensure digital content is
+          usable by everyone.
+        </p>
+        <h2 class="sub-title mt-4">Web Complaince</h2>
+        <p>
+          Web accessibility compliance involves adhering to legal standards and
+          guidelines that ensure digital content is accessible to all users,
+          including those with disabilities. Laws like the Section 508 mandate
+          specific accessibility criteria, while the Web Content Accessibility
+          Guidelines (WCAG) outline best practices for creating accessible
+          content. Compliance helps organizations avoid legal issues and fosters
+          inclusivity, enhancing the user experience for a diverse audience.
+        </p>
+        <p>
+          <strong style="color: #643a98">Note*</strong>: The following
+          documentation does not cover all of the WCAG AAA requirements. For all
+          compliance, you can visit the provided links given in front of all
+          four major principles: Perceivable, Operable, Understandable, and
+          Robust.
+        </p>
+        <ul class="compliance-list">
+          <li class="compliance-item">
+            <a href="#perceivable" class="compliance-link">Perceivable</a>
+          </li>
+          <li class="compliance-item">
+            <a href="#" class="compliance-link">Operable</a>
+          </li>
+          <li class="compliance-item">
+            <a href="#" class="compliance-link">Understandable</a>
+          </li>
+          <li class="compliance-item">
+            <a href="#" class="compliance-link">Robust</a>
+          </li>
+        </ul>
+        <div id="perceivable" class="mt-5">
+          <h2 class="sub-title mt-2 d-flex gap-3">
+            Perceivable:
+            <a
+              target="_blank"
+              href="https://www.w3.org/WAI/WCAG22/quickref/?versions=2.2&currentsidebar=%23col_overview#principle1"
+              ><i class="fa fa-external-link" aria-hidden="true"></i
+            ></a>
+          </h2>
+          <ul style="list-style-type: disclosure-closed" class="complaince-list">
+            <li>
+              <strong> Guideline 1.1 – Text Alternatives </strong>Provide text
+              alternatives for any non-text content so that it can be changed
+              into other forms people need, such as large print, braille,
+              speech, symbols or simpler language.
+              <ul>
+                <li>
+                  <strong> 1.1.1 Non-text Content - Level A</strong> All
+                  non-text content that is presented to the user has a text
+                  alternative that serves the equivalent purpose,
+                  <a
+                    style="color: #643a98"
+                    class="font-weight-bold"
+                    href="https://mubeenfayyaz-arbisoft.github.io/Web-Accessibility/table.html"
+                    >Non-text Content Demo Link</a
+                  >
+                  <ul>
+                    <li>
+                      <strong>1.1.1- meaningful-image-name</strong> All meaningful images that are presented to the user have equivalent, accessible descriptions.
+                    </li>
+                    <li>
+                      <strong>1.1.1- decorative-image</strong> All decorative images that are presented to the user do not have alternate text.
+                    </li>
+                    <li>
+                      <strong>1.1.1- decorative-background-image</strong> requires that important information provided by background images is also included by other methods.
+                    </li>
+                    <li>
+                      <strong>1.1.1- captcha-alternative</strong> requires that CAPTCHA provides formats for users without vision and users without hearing.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Guideline 1.2 - Time-based Media</strong> requires that alternatives are provided for all time-based media (audio-only, video-only, audio-video, audio and/or video).
+              <ul>
+                <li>
+                  <strong>1.2.1 Audio-only and Video-only (Prerecorded)</strong> requires text or audio alternatives for audio-only and video-only content, ensuring the same information is accessible.
+                  <ul>
+                    <li><strong>1.2.1-audio-transcript-text</strong> requires transcripts are provided for pre-recorded audio-only content. Transcripts must be accurate and complete.</li>
+                    <li><strong>1.2.1-video- alternative-equivalent</strong> requires text or audio alternatives for prerecorded video-only content, conveying the same information as the video.</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>1.2.2 Captions (Prerecorded)</strong> requires synchronized captions for all prerecorded audio content, ensuring accessibility for users.
+                  <ul>
+                    <li><strong>1.2.2-captions-equivalent</strong> requires that accurate captions are provided for pre-recorded synchronized media. Captions must be time-synchronized and equivalent.</li>
+                  </ul>
+                </li>
+                <li><strong>1.2.3 Audio Description or Media Alternative (Prerecorded)</strong> requires that prerecorded media content includes audio descriptions or alternative text tracks.</li>
+                <li><strong>1.2.4 Captions (Live)</strong> requires accurate captions for live synchronized media. The captions must be time-synchronized and equivalent.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>1.3 Adaptable</strong> ensures that the content can be presented in different ways without losing meaning.
+              <ul>
+                <li>
+                  <strong>1.3.1 Info and Relationships</strong> ensures that information and its connections are programmatically identifiable, allowing assistive technologies to convey structure accurately.
+                  <ul>
+                    <li><strong>1.3.1-heading-determinable and levels</strong> ensures that headings are used correctly and in a hierarchical manner, allowing users to easily understand the content.</li>
+                    <li><strong>1.3.1-list-type</strong> requires that all visually apparent lists are programmatically identified as the correct list type: ordered, unordered, or description list.</li>
+                    <li><strong>1.3.1-programmatic-label</strong> requires that all form elements have programmatic associations which accurately describe the form element and include all relevant instructions.</li>
+                    <li><strong>1.3.1-table-identification</strong> requires that data tables have the correct programmatic table markup to identify them as data tables.</li>
+                    <li><strong>1.3.1-cell-header-association</strong> requires that data table cells are correctly associated with the relevant headers.</li>
+                    <li><strong>1.3.1-layout-table-structure</strong> requires that layout tables are not coded as data tables. No data table semantics should be detected.</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>1.3.2 Meaningful Sequence</strong> requires that content is presented in a logical order, ensuring that users can understand and navigate the information effectively.
+                  <ul>
+                    <li><strong>1.3.2-content-order-meaning-CSS- position</strong> ensures that the visual layout does not change the meaning of content, allowing assistive technologies to interpret it correctly.</li>
+                  </ul>
+                </li>
+                <li><strong>1.3.3 Sensory Characteristics</strong> requires that instructions for user interactions do not rely solely on sensory characteristics, such as shape, color, or sound.</li>
+                <li><strong>1.3.4 Orientation</strong> mandates that content must be presented in a way that supports both portrait and landscape orientations.</li>
+                <li><strong>1.3.5 Identify Input Purpose</strong> requires that users are informed about the expected purpose of input fields through clear labels or instructions.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>1.4 Distinguishable</strong> ensures users can easily perceive and differentiate content, emphasizing color contrast, text spacing, and visibility to enhance accessibility.
+              <ul>
+                <li><strong>1.4.1 Use of Color</strong> requires that color is not the only visual means used to convey information, indicate an action, prompt a response, or distinguish a visual element.</li>
+                <li><strong>1.4.2 Audio Control</strong> requires a method for pausing and stopping audio or controlling the volume of auto-playing content within the first three elements a user encounters on a web page. </li>
+                <li><strong>1.4.3 Contrast (Minimum)</strong> ensures that text and interactive elements have sufficient contrast against their background to enhance readability for users with visual impairments.</li>
+                <li><strong>1.4.4 Resize Text</strong> requires that there is a mechanism to resize, scale, or zoom in on the text to at least 200% of its original size without loss of content or functionality.</li>
+                <li><strong>1.4.5 Images of Text</strong> requires that images of text are either essential, such as logotypes, or presented along with user controls to customize font, size, color and background.</li>
+                <li><strong>1.4.10 Reflow</strong> ensures that content can adapt to various screen sizes, with a minimum width of 320 pixels and a height of 256 pixels.</li>
+                <li><strong>1.4.11 Non-text Contrast</strong> requires that visual elements, such as user interface components and graphical objects, have a contrast ratio of at least 3:1 against adjacent colors</li>
+                <li><strong>1.4.12 Text Spacing</strong> ensures that users can adjust the spacing between characters, words, lines, and paragraphs without loss of content or functionality.</li>
+                <li><strong>1.4.13 Content on Hover or Focus</strong> requires that any content displayed on hover or focus (like tooltips or menus) must be accessible and not obscure other content.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
   </body>
 </html>
+
