@@ -26,10 +26,7 @@
       type="image/x-icon"
     />
     <style>
-      .logo-image {
-        width: 100%;
-        max-width: 50px;
-      }
+    
     </style>
     <link rel="stylesheet" href="css/style.css" />
 
@@ -42,14 +39,16 @@
   </head>
   <body>
     <main class="d-flex flex-nowrap gap-3 align-items-stretch">
+    <a href="#main-content" class="skip-content">Skip to main content</a>
+
       <aside class="p-3 d-flex flex-column sidebar" style="">
         <div class="flex-shrink-0">
           <a
             href="https://mubeenfayyaz-arbisoft.github.io/Web-Accessibility/home-main.html"
-            class="d-flex align-items-center pb-2 mb-2 link-dark text-decoration-none border-bottom"
+            class="action-link p-2 d-flex align-items-center  mb-2 link-dark text-decoration-none border-bottom"
           >
             <span
-              class="fs-5 align-items-center fw-semibold d-flex gap-3"
+              class="fs-5 align-items-center fw-semibold d-flex gap-2"
               style="color: #fff"
             >
               <img
@@ -158,12 +157,12 @@
         <div class="footer-link mt-auto text-center">
           <a
             href="http://127.0.0.1:5500/all-tools.html"
-            class="link-color-white"
+            class="link-color-white action-link"
             >Web Accessibility All Tools</a
           >
         </div>
       </aside>
-      <section class="w-100 p-4 content">
+      <section class="w-100 p-4 content" >
         <h1 class="main-heading mb-5">
           Accessibility in HTML with Examples & Best Practices
         </h1>
@@ -196,7 +195,7 @@
           four major principles: Perceivable, Operable, Understandable, and
           Robust.
         </p>
-        <ul class="compliance-list">
+        <ul class="compliance-list" id="main-content">
           <li class="compliance-item">
             <a href="#perceivable" class="compliance-link">Perceivable</a>
           </li>
@@ -216,8 +215,8 @@
             <a
               target="_blank"
               href="https://www.w3.org/WAI/WCAG22/quickref/?versions=2.2&currentsidebar=%23col_overview#principle1"
-              ><i class="fa fa-external-link" aria-hidden="true"></i
-            ></a>
+              >
+              <i class="fa fa-external-link small-icon" aria-hidden="true"></i></a>
           </h2>
           <ul
             style="list-style-type: disclosure-closed"
@@ -456,7 +455,7 @@
             <a
               target="_blank"
               href="https://www.w3.org/WAI/WCAG22/quickref/?versions=2.2&currentsidebar=%23col_overview#principle2"
-              ><i class="fa fa-external-link" aria-hidden="true"></i
+              ><i class="fa fa-external-link small-icon" aria-hidden="true"></i
             ></a>
           </h2>
           <ul
@@ -656,7 +655,7 @@
             <a
               target="_blank"
               href="https://www.w3.org/WAI/WCAG22/quickref/?versions=2.2&currentsidebar=%23col_overview#principle3"
-              ><i class="fa fa-external-link" aria-hidden="true"></i
+              ><i class="fa fa-external-link small-icon" aria-hidden="true"></i
             ></a>
           </h2>
           <ul
@@ -771,7 +770,7 @@
             <a
               target="_blank"
               href="https://www.w3.org/WAI/WCAG22/quickref/?versions=2.2&currentsidebar=%23col_overview#principle4"
-              ><i class="fa fa-external-link" aria-hidden="true"></i
+              ><i class="fa fa-external-link small-icon" aria-hidden="true"></i
             ></a>
           </h2>
           <ul
