@@ -281,3 +281,11 @@ span.demo-label {
 .accordion-body {
   padding: 12px 18px;
 }
+
+ul.inner-list li {
+  padding-top: 6px;
+}
+ul.inner-list li:last-child {
+  padding-top: 6px;
+  padding-bottom: 5px;
+}

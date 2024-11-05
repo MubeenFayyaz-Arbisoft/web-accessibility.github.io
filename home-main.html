@@ -25,9 +25,7 @@
       href="Images/accessibility-logo.png"
       type="image/x-icon"
     />
-    <style>
-    
-    </style>
+    <style></style>
     <link rel="stylesheet" href="css/style.css" />
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -39,13 +37,13 @@
   </head>
   <body>
     <main class="d-flex flex-nowrap gap-3 align-items-stretch">
-    <a href="#main-content" class="skip-content">Skip to main content</a>
+      <a href="#main-content" class="skip-content">Skip to main content</a>
 
       <aside class="p-3 d-flex flex-column sidebar" style="">
         <div class="flex-shrink-0">
           <a
             href="https://mubeenfayyaz-arbisoft.github.io/Web-Accessibility/home-main.html"
-            class="action-link p-2 d-flex align-items-center  mb-2 link-dark text-decoration-none border-bottom"
+            class="action-link p-2 d-flex align-items-center mb-2 link-dark text-decoration-none border-bottom"
           >
             <span
               class="fs-5 align-items-center fw-semibold d-flex gap-2"
@@ -59,12 +57,9 @@
               Web Accessibility</span
             >
           </a>
-          <span class="demo-label" >Demo Resources</span>
+          <span class="demo-label">Demo Resources</span>
 
-          <div
-            class="accordion accordion-flush"
-            id="menu-sidebar "
-          >
+          <div class="accordion accordion-flush" id="menu-sidebar ">
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingOne">
                 <button
@@ -161,7 +156,7 @@
           >
         </div>
       </aside>
-      <section class="w-100 p-4 content" >
+      <section class="w-100 p-4 content">
         <h1 class="main-heading mb-5">
           Accessibility in HTML with Examples & Best Practices
         </h1>
@@ -199,23 +194,32 @@
             <a href="#perceivable" class="compliance-link">Perceivable</a>
           </li>
           <li class="compliance-item">
-            <a href="#" class="compliance-link">Operable</a>
+            <a href="#operable" class="compliance-link">Operable</a>
           </li>
           <li class="compliance-item">
-            <a href="#" class="compliance-link">Understandable</a>
+            <a href="#understandable" class="compliance-link">Understandable</a>
           </li>
           <li class="compliance-item">
-            <a href="#" class="compliance-link">Robust</a>
+            <a href="#robust" class="compliance-link">Robust</a>
           </li>
         </ul>
-        <div id="perceivable" class="mt-5">
-          <h2 class="sub-title mt-2 d-flex gap-3">
+        <div class="mt-4">
+          <p id="perceivable">
+            <i class="fa fa-eye"></i> In web accessibility,
+            <strong> *Perceivable*</strong> means that information and user
+            interface components must be presented to users in ways they can
+            sense whether through sight, hearing, or touch—ensuring that content
+            is accessible to individuals with sensory disabilities.
+          </p>
+
+          <h2 class="sub-title mt-5 d-flex gap-3 mb-3">
             Perceivable:
             <a
               target="_blank"
               href="https://www.w3.org/WAI/WCAG22/quickref/?versions=2.2&currentsidebar=%23col_overview#principle1"
-              >
-              <i class="fa fa-external-link small-icon" aria-hidden="true"></i></a>
+            >
+              <i class="fa fa-external-link small-icon" aria-hidden="true"></i
+            ></a>
           </h2>
           <ul
             style="list-style-type: disclosure-closed"
@@ -226,7 +230,7 @@
               alternatives for any non-text content so that it can be changed
               into other forms people need, such as large print, braille,
               speech, symbols or simpler language.
-              <ul>
+              <ul class="inner-list">
                 <li>
                   <strong> 1.1.1 Non-text Content - Level A</strong> All
                   non-text content that is presented to the user has a text
@@ -236,7 +240,7 @@
                     href="https://mubeenfayyaz-arbisoft.github.io/Web-Accessibility/table.html"
                     >Non-text Content Demo Link</a
                   >
-                  <ul>
+                  <ul class="inner-list">
                     <li>
                       <strong>1.1.1 - meaningful-image-name</strong> All
                       meaningful images that are presented to the user have
@@ -265,13 +269,13 @@
               <strong>Guideline 1.2 - Time-based Media</strong> requires that
               alternatives are provided for all time-based media (audio-only,
               video-only, audio-video, audio and/or video).
-              <ul>
+              <ul class="inner-list">
                 <li>
                   <strong>1.2.1 Audio-only and Video-only (Prerecorded)</strong>
                   requires text or audio alternatives for audio-only and
                   video-only content, ensuring the same information is
                   accessible.
-                  <ul>
+                  <ul class="inner-list">
                     <li>
                       <strong>1.2.1-audio-transcript-text</strong> requires
                       transcripts are provided for pre-recorded audio-only
@@ -289,7 +293,7 @@
                   <strong>1.2.2 Captions (Prerecorded)</strong> requires
                   synchronized captions for all prerecorded audio content,
                   ensuring accessibility for users.
-                  <ul>
+                  <ul class="inner-list">
                     <li>
                       <strong>1.2.2-captions-equivalent</strong> requires that
                       accurate captions are provided for pre-recorded
@@ -316,13 +320,13 @@
             <li>
               <strong>Guideline 1.3 - Adaptable</strong> ensures that the
               content can be presented in different ways without losing meaning.
-              <ul>
+              <ul class="inner-list">
                 <li>
                   <strong>1.3.1 Info and Relationships</strong> ensures that
                   information and its connections are programmatically
                   identifiable, allowing assistive technologies to convey
                   structure accurately.
-                  <ul>
+                  <ul class="inner-list">
                     <li>
                       <strong>1.3.1-heading-determinable and levels</strong>
                       ensures that headings are used correctly and in a
@@ -362,7 +366,7 @@
                   <strong>1.3.2 Meaningful Sequence</strong> requires that
                   content is presented in a logical order, ensuring that users
                   can understand and navigate the information effectively.
-                  <ul>
+                  <ul class="inner-list">
                     <li>
                       <strong>1.3.2-content-order-meaning-CSS- position</strong>
                       ensures that the visual layout does not change the meaning
@@ -392,7 +396,7 @@
               <strong>Guideline 1.4 - Distinguishable</strong> ensures users can
               easily perceive and differentiate content, emphasizing color
               contrast, text spacing, and visibility to enhance accessibility.
-              <ul>
+              <ul class="inner-list">
                 <li>
                   <strong>1.4.1 Use of Color</strong> requires that color is not
                   the only visual means used to convey information, indicate an
@@ -447,7 +451,11 @@
             </li>
           </ul>
         </div>
-        <div id="operable" class="mt-5">
+        <p id="operable" class="mt-4">
+          <i class="fa fa-eye"></i> In web accessibility,
+          <strong> *Operable*</strong> means that users must be able to navigate and interact with a website or application, regardless of their physical or cognitive abilities. This includes ensuring that all functionality is accessible via keyboard (not just a mouse), providing enough time for users to interact with content, and designing navigation that avoids causing seizures or physical reactions.
+        </p>
+        <div class="mt-4">
           <h2 class="sub-title mt-2 d-flex gap-3">
             Operable:
             <a
@@ -464,7 +472,7 @@
               <strong> Guideline 2.1 – Keyboard Accessible </strong> mandates
               that all interface functions are operable via keyboard, ensuring
               accessibility for users with disabilities.
-              <ul>
+              <ul class="inner-list">
                 <li>
                   <strong>2.1.1-keyboard-access</strong> requires that all
                   functionality of a webpage is accessible through a keyboard,
@@ -486,7 +494,7 @@
             <li>
               <strong>Guideline 2.2 - Enough Time</strong> ensures that users
               have sufficient time to read and interact with content.
-              <ul>
+              <ul class="inner-list">
                 <li>
                   <strong>2.2.1 Timing Adjustable</strong> requires that any
                   time limits can be adjusted or extended, allowing users to
@@ -497,7 +505,7 @@
                   <strong>2.2.2 Pause, Stop, Hide</strong> requires users to be
                   able to pause, stop, or hide moving content, allowing them to
                   control their viewing experience.
-                  <ul>
+                  <ul class="inner-list">
                     <li>
                       <strong>2.2.2-blinking-moving-scrolling</strong> requires
                       that users can pause, stop, or hide content that blinks,
@@ -517,7 +525,7 @@
               <strong>Guideline 2.3 - Seizures and Physical Reactions</strong>
               seeks to prevent triggering seizures by avoiding content that
               flashes more than three times per second and providing warnings.
-              <ul>
+              <ul class="inner-list">
                 <li>
                   <strong>2.3.1 Three Flashes or Below Threshold</strong>
                   requires that content does not flash more than three times in
@@ -530,7 +538,7 @@
               easily navigate content through clear options, consistent layouts,
               and meaningful headings, enhancing the overall browsing
               experience.
-              <ul>
+              <ul class="inner-list">
                 <li>
                   <strong>2.4.1 Bypass Blocks</strong> requires that users can
                   bypass repetitive content, such as navigation menus, to easily
@@ -540,7 +548,7 @@
                   <strong>2.4.2 Page Titled</strong> mandates that each page has
                   a descriptive title, helping users understand the content and
                   context when navigating through a site.
-                  <ul>
+                  <ul class="inner-list">
                     <li>
                       <strong>2.4.2-page-title-defined and purpose</strong>
                       requires that each page has a clear and descriptive title
@@ -570,7 +578,7 @@
                   headings and labels are used effectively to organize content,
                   helping users understand the structure and navigate the
                   information easily.
-                  <ul>
+                  <ul class="inner-list">
                     <li>
                       <strong>2.4.6-heading-purpose</strong> mandates that
                       headings accurately convey the content they represent,
@@ -608,7 +616,7 @@
               <strong>Guideline 2.5 - Input Modalities</strong> ensures users
               can interact with content through multiple input methods, such as
               keyboard, mouse, touch, and voice, enhancing accessibility.
-              <ul>
+              <ul class="inner-list">
                 <li>
                   <strong>2.5.1 Pointer Gestures</strong> mandates that all
                   functions accessible via pointer gestures can also be
@@ -647,7 +655,11 @@
             </li>
           </ul>
         </div>
-        <div id="understandable" class="mt-5">
+        <p id="understandable"class="mt-4">
+          <i class="fa fa-eye"></i> In web accessibility,
+          <strong> *Understandable*</strong> means that content and user interface elements must be clear and easy for users to comprehend. This includes using straightforward language, offering instructions for complex interactions, providing consistent navigation, and minimizing any unexpected behaviors. The goal is to ensure that all users can process and use the information without confusion.
+        </p>
+        <div  class="mt-4">
           <h2 class="sub-title mt-2 d-flex gap-3">
             Understandable:
             <a
@@ -664,7 +676,7 @@
               <strong> Guideline 3.1 - Readable </strong> focuses on ensuring
               that content is presented in a way that is easy to read and
               understand.
-              <ul>
+              <ul class="inner-list">
                 <li>
                   <strong>3.1.1 Language of Page</strong> equires that web pages
                   programmatically identify the page’s default human language.
@@ -680,7 +692,7 @@
               <strong> Guideline 3.2 - Predictable </strong> ensures that user
               interfaces behave in a consistent and expected manner, allowing
               users to anticipate how elements will function.
-              <ul>
+              <ul class="inner-list">
                 <li>
                   <strong>3.2.1 On Focus</strong> requires that no unexpected
                   changes of context occur when an element receives focus.
@@ -712,7 +724,7 @@
               <strong> Guideline 3.3 - Input Assistance </strong> ensures users
               receive support in entering information accurately through clear
               labels, instructions, and error identification.
-              <ul>
+              <ul class="inner-list">
                 <li>
                   <strong>3.3.1 Error Identification</strong> mandates that
                   errors are clearly identified and described when they occur,
@@ -724,7 +736,7 @@
                   all form elements include clear labels or instructions,
                   helping users understand how to interact with them and
                   improving accessibility.
-                  <ul>
+                  <ul class="inner-list">
                     <li>
                       <strong>3.3.2-label-provided</strong> mandates that all
                       form elements have clear and descriptive labels, ensuring
@@ -762,7 +774,11 @@
             </li>
           </ul>
         </div>
-        <div id="robust" class="mt-5">
+        <p id="understandable"class="mt-4">
+          <i class="fa fa-eye"></i> In web accessibility,
+          <strong> *Robust*</strong> means that content must be compatible with a wide range of current and future technologies, including various assistive devices. This principle emphasizes creating content that can be reliably interpreted by different browsers, screen readers, and other tools so that all users can access it, regardless of the technology they use.
+        </p>
+        <div id="robust" class="mt-4">
           <h2 class="sub-title mt-2 d-flex gap-3">
             Robust:
             <a
@@ -779,12 +795,12 @@
               <strong> Guideline 4.1 - Compatible </strong> ensures that user
               interface components and content are compatible with assistive
               technologies, enabling reliable interpretation and interaction.
-              <ul>
+              <ul class="inner-list">
                 <li>
                   <strong>4.1.2 Name, Role, Value</strong> mandates that all
                   user interface components have programmatically determined
                   names, roles, and values.
-                  <ul>
+                  <ul class="inner-list">
                     <li>
                       <strong>4.1.2-frame-title</strong> requires that all frame
                       elements have a title attribute, ensuring users and
