@@ -34,12 +34,12 @@ a.skip-content {
   top: 0;
   z-index: 1;
   color: #fff;
-  visibility: hidden;
+  opacity: 0;
 }
 a.skip-content:focus,
 a.skip-content:focus-visible,
 a.skip-content:hover {
-  visibility: visible;
+  opacity: 1;
 }
 .content {
   margin-left: 300px;
