@@ -259,25 +259,25 @@ a:focus .small-icon::before {
   padding: 1px 6px;
   font-size: 16px;
 }
-.demo-links:hover{
-color: var(--primary-color);
-
+.demo-links:hover {
+  color: var(--primary-color);
 }
-.accordion{
+.accordion {
   border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-    margin-top: -4px;
+  overflow: hidden;
+  position: relative;
+  margin-top: -4px;
 }
 span.demo-label {
   color: white;
   margin-top: 12px;
   display: block;
   width: max-content;
-  background: #d33a2c;
+  background: var(--secondary-color);
   border-radius: 10px 10px 0 0;
   padding: 5px 10px;
 }
-.accordion-button, .accordion-body{
+.accordion-button,
+.accordion-body {
   padding: 12px 18px;
 }
