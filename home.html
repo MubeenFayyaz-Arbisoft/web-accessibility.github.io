@@ -58,91 +58,89 @@
             >
           </a>
           <span class="demo-label">Demo Resources</span>
-
-          <div class="accordion accordion-flush" id="menu-sidebar ">
+          <div class="accordion" id="menu-sidebar">
             <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingOne">
+              <h2 class="accordion-header" id="headingOne">
                 <button
-                  class="accordion-button collapsed bg-transparent"
+                  class="accordion-button"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseOne"
-                  aria-expanded="false"
-                  aria-controls="flush-collapseOne"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
                 >
                   Table Components
                 </button>
               </h2>
               <div
-                id="flush-collapseOne"
-                class="accordion-collapse collapse"
-                aria-labelledby="flush-headingOne"
-                data-bs-parent="#menu-sidebar "
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#menu-sidebar"
               >
                 <div class="accordion-body">
                   <a
                     href="https://mubeenfayyaz-arbisoft.github.io/Web-Accessibility/table.html"
-                    style="color: #643a98"
-                    class="font-weight-bold link-action"
+                    class="font-weight-bold link-action red-color"
                     >Table</a
                   >
                 </div>
               </div>
             </div>
             <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingTwo">
+              <h2 class="accordion-header" id="headingTwo">
                 <button
                   class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseTwo"
+                  data-bs-target="#collapseTwo"
                   aria-expanded="false"
-                  aria-controls="flush-collapseTwo"
+                  aria-controls="collapseTwo"
                 >
                   Images Components
                 </button>
               </h2>
               <div
-                id="flush-collapseTwo"
+                id="collapseTwo"
                 class="accordion-collapse collapse"
-                aria-labelledby="flush-headingTwo"
-                data-bs-parent="#menu-sidebar "
+                aria-labelledby="headingTwo"
+                data-bs-parent="#menu-sidebar"
               >
                 <div class="accordion-body">
-                  Placeholder content for this accordion, which is intended to
-                  demonstrate the <code>.accordion-flush</code> class. This is
-                  the second item's accordion body. Let's imagine this being
-                  filled with some actual content.
+                  <a
+                    href="https://mubeenfayyaz-arbisoft.github.io/Web-Accessibility/table.html"
+                    class="font-weight-bold link-action red-color"
+                    >Table</a
+                  >
                 </div>
               </div>
             </div>
             <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingThree">
+              <h2 class="accordion-header" id="headingThree">
                 <button
                   class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseThree"
+                  data-bs-target="#collapseThree"
                   aria-expanded="false"
-                  aria-controls="flush-collapseThree"
+                  aria-controls="collapseThree"
                 >
-                  Links Components
+                  Best Reference Links
                 </button>
               </h2>
               <div
-                id="flush-collapseThree"
+                id="collapseThree"
                 class="accordion-collapse collapse"
-                aria-labelledby="flush-headingThree"
-                data-bs-parent="#menu-sidebar "
+                aria-labelledby="headingThree"
+                data-bs-parent="#menu-sidebar"
               >
                 <div class="accordion-body">
-                  Placeholder content for this accordion, which is intended to
-                  demonstrate the <code>.accordion-flush</code> class. This is
-                  the third item's accordion body. Nothing more exciting
-                  happening here in terms of content, but just filling up the
-                  space to make it look, at least at first glance, a bit more
-                  representative of how this would look in a real-world
-                  application.
+                  <a
+                    href="https://www.magentaa11y.com/web/"
+                    class="font-weight-bold link-action red-color"
+                    target="_blank"
+                    >Magentaa11y</a
+                  >
                 </div>
               </div>
             </div>
@@ -150,15 +148,32 @@
         </div>
         <div class="footer-link mt-auto text-center">
           <a
-            href="https://mubeenfayyaz-arbisoft.github.io/Web-Accessibility/all-tools.html"
+            href="https://mubeenfayyaz-arbisoft.github.io/Web-Accessibility/best-reference-links.html"
             class="link-color-white action-link"
-            >Web Accessibility All Tools</a
+            >Best Reference Links</a
           >
         </div>
       </aside>
-      <div class="inner-main p-4 content">
+      <div class="content" id="back-to-top">
+        <div class="dashboard-top-banner">
+
+          <a href="#" class="link-color-white">
+            About Us
+          </a>
+          <a href="https://mubeenfayyaz-arbisoft.github.io/Web-Accessibility/all-tools.html" class="link-color-white">
+            All Tools
+          </a>
+          <a href="#" class="link-color-white">
+            Our Certfications
+          </a>
+           <a href="#" class="link-color-white">
+          Support
+          </a>
+         
+        </div>
+      <div class="inner-main p-4 pt-4 ">
         <section class="w-100">
-          <h1 class="main-heading mb-5">
+          <h1 class="main-heading mb-4">
             Accessibility in HTML with Examples & Best Practices
           </h1>
           <h2 class="sub-title">Purpose</h2>
@@ -174,7 +189,7 @@
             content is usable by everyone.
           </p>
           <div class="d-flex gap-2 align-items-center mt-4">
-            <h2 class="sub-title">Web Complaince</h2>
+            <h2 class="sub-title">Web Compliance</h2>
             <a
               class="font-weight-bold demo-links"
               href="https://mubeenfayyaz-arbisoft.github.io/Web-Accessibility/highest-lowest-priority.html"
@@ -199,7 +214,7 @@
             and Robust.
           </p>
         </section>
-        <section class="w-100" id="back-to-top">
+        <section class="w-100" >
           <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
               <button
@@ -992,6 +1007,7 @@
           </div>
         </section>
       </div>
+    </div>
     </main>
   </body>
 </html>

@@ -21,6 +21,9 @@ body {
 .red-color {
   color: var(--red-color);
 }
+.link-color-black {
+  color: var(--secondary-color);
+}
 .sidebar {
   background-color: var(--primary-color);
   max-width: 280px;
@@ -195,6 +198,9 @@ a.compliance-link {
 .button-card:hover {
   background-color: var(--secondary-color);
 }
+a {
+  padding: 1px 6px;
+}
 a:focus,
 a:focus .small-icon::before {
   outline: 2px dotted;
@@ -204,6 +210,7 @@ a:focus .small-icon::before {
   color: #fff !important;
   border-radius: 4px;
   background-color: var(--red-color);
+  padding: 1px 6px;
 }
 .small-icon {
   padding: 1px 5px;
@@ -220,6 +227,10 @@ a:focus .small-icon::before {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
   background-color: var(--red-color);
   color: #fff;
+}
+.back-link:focus {
+  padding: 8px 15px;
+  border-radius: 20px;
 }
 .action-link {
   border: 2px solid transparent;
@@ -256,10 +267,20 @@ a:focus .small-icon::before {
 }
 .accordion {
   border-radius: 10px;
-  overflow: hidden;
   position: relative;
   margin-top: -4px;
 }
+.accordion-button:not(.collapsed) {
+  background-color: #643a981c;
+}
+.accordion-button {
+  border: 2px solid transparent;
+}
+.accordion-button:focus {
+  box-shadow: unset;
+  border: 2px dotted var(--red-color);
+}
+
 span.demo-label {
   color: white;
   margin-top: 12px;
@@ -274,7 +295,15 @@ span.demo-label {
 .accordion-body {
   padding: 12px 18px;
 }
-
+.dashboard-top-banner {
+  background: var(--primary-color);
+  padding: 10px 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: end;
+}
 ul.inner-list li {
   padding-top: 6px;
 }
@@ -285,7 +314,7 @@ ul.inner-list li:last-child {
 
 thead.thead-dark tr th {
   color: #fff;
-  font-weight: 700;
+  font-weight: 500;
   background: #9b4085;
   background: -moz-linear-gradient(-45deg, #9b4085 0%, #608590 100%);
   background: -webkit-linear-gradient(-45deg, #9b4085 0%, #608590 100%);
