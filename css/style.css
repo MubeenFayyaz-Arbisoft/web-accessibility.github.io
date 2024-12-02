@@ -411,3 +411,7 @@ li.nav-item {
   font-size: 18px;
   color: var(--red-color);
 }
+
+.demo-figure img {
+  max-width: 100%;
+}
