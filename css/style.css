@@ -412,6 +412,6 @@ li.nav-item {
   color: var(--red-color);
 }
 
-.demo-figure img {
+.demo-figure .demo-img {
   max-width: 100%;
 }
