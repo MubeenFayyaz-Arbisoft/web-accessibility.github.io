@@ -3,46 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      .logo-image {
-        width: 100px;
-        height: 100px;
-      }
-    </style>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
+    <title>Web Accessibility</title>
     <link
       rel="shortcut icon"
-      href="Images/accessibility-logo.png"
+      href="assets/images/accessibility-logo.svg"
       type="image/x-icon"
     />
-
-    <link rel="stylesheet" href="css/style.css" />
-
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="styles/global.css" />
   </head>
   <body>
-    <main class="main-content">
+    <header  class="internal-main-nav">
+      <a href="#main-content" class="skip-content">Skip to main content</a>
+
+      <nav>
+        <ul>
+          <li>
+            <a
+              href="https://mubeenfayyaz-arbisoft.github.io/Web-Accessibility/home.html"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://mubeenfayyaz-arbisoft.github.io/Web-Accessibility/best-reference-links.html"
+              >Best Reference Links</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://mubeenfayyaz-arbisoft.github.io/Web-Accessibility/table.html"
+              >Our Certifications</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://mubeenfayyaz-arbisoft.github.io/Web-Accessibility/all-tools.html"
+              >Our Support</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-content"id="back-to-top">
       <div class="text-center contianer-div position-relative">
         <div
           class="text-start position-absolute"
@@ -55,13 +57,15 @@
             Back Home</a
           >
         </div>
-        <h1 class="text-center link-color-white">Web Accessibility Tools</h1>
+        <h1 class="text-center white-color large-heading">
+          Web Accessibility Tools
+        </h1>
       </div>
-      <div class="container-body">
+      <div class="container-body" id="main-content">
         <h2 class="pills">For Web</h2>
-        <div class="card-container">
-          <div class="card">
-            <div>
+        <div class="card-container row">
+          <div class="col-sm-4">
+            <div class="card">
               <div class="top-bar"></div>
               <div class="content-card">
                 <div class="title">Andi</div>
@@ -71,18 +75,17 @@
                   testing to automatically detect accessibility issues.
                 </div>
               </div>
+              <a
+                href="https://www.ssa.gov/accessibility/andi/help/install.html"
+                target="_blank"
+                class="button-card"
+              >
+                Andi Download
+              </a>
             </div>
-
-            <a
-              href="https://www.ssa.gov/accessibility/andi/help/install.html"
-              target="_blank"
-              class="button-card"
-            >
-              Andi Download
-            </a>
           </div>
-          <div class="card">
-            <div>
+          <div class="col-sm-4">
+            <div class="card">
               <div class="top-bar"></div>
               <div class="content-card">
                 <div class="title">Color Contrast Analyzer</div>
@@ -92,17 +95,17 @@
                   contrast ratios
                 </div>
               </div>
+              <a
+                href="https://www.tpgi.com/color-contrast-checker/"
+                target="_blank"
+                class="button-card"
+              >
+                CCA Download
+              </a>
             </div>
-            <a
-              href="https://www.tpgi.com/color-contrast-checker/"
-              target="_blank"
-              class="button-card"
-            >
-              CCA Download
-            </a>
           </div>
-          <div class="card">
-            <div>
+          <div class="col-sm-4">
+            <div class="card">
               <div class="top-bar"></div>
               <div class="content-card">
                 <div class="title">Mac's Voiceover</div>
@@ -113,16 +116,16 @@
                   <strong> Command + fn + F5</strong>
                 </div>
               </div>
+              <a
+                href="https://accessibilityresources.org/about-accessibility/screen-reader-commands/item/188-voiceover"
+                class="button-card"
+              >
+                Voiceover Shortcut keys
+              </a>
             </div>
-            <a
-              href="https://accessibilityresources.org/about-accessibility/screen-reader-commands/item/188-voiceover"
-              class="button-card"
-            >
-              Voiceover Shortcut keys
-            </a>
           </div>
-          <div class="card">
-            <div>
+          <div class="col-sm-4">
+            <div class="card">
               <div class="top-bar"></div>
               <div class="content-card">
                 <div class="title">Window's Narrator</div>
@@ -133,19 +136,16 @@
                   <strong> Window + Ctrl + Enter</strong>
                 </div>
               </div>
+              <a
+                href="https://support.microsoft.com/en-us/windows/chapter-1-introducing-narrator-7fe8fd72-541f-4536-7658-bfc37ddaf9c6"
+                class="button-card"
+              >
+                Window's Download
+              </a>
             </div>
-
-            <a
-              href="https://support.microsoft.com/en-us/windows/chapter-1-introducing-narrator-7fe8fd72-541f-4536-7658-bfc37ddaf9c6"
-              class="button-card"
-            >
-              Andi Download
-            </a>
           </div>
-        </div>
-        <div class="card-container">
-          <div class="card">
-            <div>
+          <div class="col-sm-4">
+            <div class="card">
               <div class="top-bar"></div>
               <div class="content-card">
                 <div class="title">JAWS</div>
@@ -155,18 +155,17 @@
                   computer screen into synthesized speech.
                 </div>
               </div>
+              <a
+                href="https://support.freedomscientific.com/Downloads/JAWS"
+                target="_blank"
+                class="button-card"
+              >
+                JAWS Download
+              </a>
             </div>
-
-            <a
-              href="https://support.freedomscientific.com/Downloads/JAWS"
-              target="_blank"
-              class="button-card"
-            >
-              JAWS Download
-            </a>
           </div>
-          <div class="card">
-            <div>
+          <div class="col-sm-4">
+            <div class="card">
               <div class="top-bar"></div>
               <div class="content-card">
                 <div class="title">Magnifier</div>
@@ -176,17 +175,17 @@
                   to access information.
                 </div>
               </div>
+              <a
+                href="https://chromewebstore.google.com/detail/magnifying-glass-hover-zo/gfcbebjdigncefnokoncehghgfndjcgn?hl=en"
+                target="_blank"
+                class="button-card"
+              >
+                Magnifier Download
+              </a>
             </div>
-            <a
-              href="https://chromewebstore.google.com/detail/magnifying-glass-hover-zo/gfcbebjdigncefnokoncehghgfndjcgn?hl=en"
-              target="_blank"
-              class="button-card"
-            >
-              Magnifier Download
-            </a>
           </div>
-          <div class="card">
-            <div>
+          <div class="col-sm-4">
+            <div class="card">
               <div class="top-bar"></div>
               <div class="content-card">
                 <div class="title">Text Spacing Editor</div>
@@ -196,16 +195,16 @@
                   dyslexia or other reading difficulties.
                 </div>
               </div>
+              <a
+                href="https://chromewebstore.google.com/detail/text-spacing-editor/amnelgbfbdlfjeaobejkfmjjnmeddaoj?hl=en"
+                class="button-card"
+              >
+                Text Spacing Download
+              </a>
             </div>
-            <a
-              href="https://chromewebstore.google.com/detail/text-spacing-editor/amnelgbfbdlfjeaobejkfmjjnmeddaoj?hl=en"
-              class="button-card"
-            >
-              Text Spacing Download
-            </a>
           </div>
-          <div class="card">
-            <div>
+          <div class="col-sm-4">
+            <div class="card">
               <div class="top-bar"></div>
               <div class="content-card">
                 <div class="title">Wave</div>
@@ -215,19 +214,16 @@
                   heading structures and more.
                 </div>
               </div>
+              <a
+                href="https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh"
+                class="button-card"
+              >
+                Wave Download
+              </a>
             </div>
-
-            <a
-              href="https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh"
-              class="button-card"
-            >
-              Wave Download
-            </a>
           </div>
-        </div>
-        <div class="card-container">
-          <div class="card">
-            <div>
+          <div class="col-sm-4">
+            <div class="card">
               <div class="top-bar"></div>
               <div class="content-card">
                 <div class="title">ARC Toolkit</div>
@@ -237,18 +233,17 @@
                   testing tools. It provides actionable insights and reports
                 </div>
               </div>
+              <a
+                href="https://chromewebstore.google.com/detail/arc-toolkit/chdkkkccnlfncngelccgbgfmjebmkmce"
+                target="_blank"
+                class="button-card"
+              >
+                ARC Toolkit Download
+              </a>
             </div>
-
-            <a
-              href="https://chromewebstore.google.com/detail/arc-toolkit/chdkkkccnlfncngelccgbgfmjebmkmce"
-              target="_blank"
-              class="button-card"
-            >
-              ARC Toolkit Download
-            </a>
           </div>
-          <div class="card">
-            <div>
+          <div class="col-sm-4">
+            <div class="card">
               <div class="top-bar"></div>
               <div class="content-card">
                 <div class="title">Google Lighthouse</div>
@@ -259,17 +254,17 @@
                   issues.
                 </div>
               </div>
+              <a
+                href="https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk"
+                target="_blank"
+                class="button-card"
+              >
+                Lighthouse Download
+              </a>
             </div>
-            <a
-              href="https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk"
-              target="_blank"
-              class="button-card"
-            >
-              Lighthouse Download
-            </a>
           </div>
-          <div class="card">
-            <div>
+          <div class="col-sm-4">
+            <div class="card">
               <div class="top-bar"></div>
               <div class="content-card">
                 <div class="title">AXE</div>
@@ -279,16 +274,16 @@
                   accessibility violations.
                 </div>
               </div>
+              <a
+                href="https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd"
+                class="button-card"
+              >
+                AXE Download
+              </a>
             </div>
-            <a
-              href="https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd"
-              class="button-card"
-            >
-              AXE Download
-            </a>
           </div>
-          <div class="card">
-            <div>
+          <div class="col-sm-4">
+            <div class="card">
               <div class="top-bar"></div>
               <div class="content-card">
                 <div class="title">Web Developer Tool</div>
@@ -298,19 +293,17 @@
                   inspect elements, check alt text, and modify styles.
                 </div>
               </div>
-            </div>
 
-            <a
-              href="https://chromewebstore.google.com/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm"
-              class="button-card"
-            >
-              Developer Tool Download
-            </a>
+              <a
+                href="https://chromewebstore.google.com/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm"
+                class="button-card"
+              >
+                Developer Tool Download
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="card-container">
-          <div class="card">
-            <div>
+          <div class="col-sm-4">
+            <div class="card">
               <div class="top-bar"></div>
               <div class="content-card">
                 <div class="title">Read Aloud</div>
@@ -320,18 +313,17 @@
                   for users with visual impairments or reading difficulties.
                 </div>
               </div>
+              <a
+                href="https://chromewebstore.google.com/detail/read-aloud-a-text-to-spee/hdhinadidafjejdhmfkjgnolgimiaplp"
+                target="_blank"
+                class="button-card"
+              >
+                Read Aloud Download
+              </a>
             </div>
-
-            <a
-              href="https://chromewebstore.google.com/detail/read-aloud-a-text-to-spee/hdhinadidafjejdhmfkjgnolgimiaplp"
-              target="_blank"
-              class="button-card"
-            >
-              Read Aloud Download
-            </a>
           </div>
-          <div class="card">
-            <div>
+          <div class="col-sm-4">
+            <div class="card">
               <div class="top-bar"></div>
               <div class="content-card">
                 <div class="title" style="font-size: 19px">
@@ -343,17 +335,17 @@
                   hinder usability for individuals with disabilities.
                 </div>
               </div>
+              <a
+                href="https://chromewebstore.google.com/detail/a11y-html5-validator/cfgfmngpbhlaagbfjhellojpcpcjmnkl"
+                target="_blank"
+                class="button-card"
+              >
+                Install HTML5 Validator
+              </a>
             </div>
-            <a
-              href="https://chromewebstore.google.com/detail/a11y-html5-validator/cfgfmngpbhlaagbfjhellojpcpcjmnkl"
-              target="_blank"
-              class="button-card"
-            >
-              Install HTML5 Validator
-            </a>
           </div>
-          <div class="card">
-            <div>
+          <div class="col-sm-4">
+            <div class="card">
               <div class="top-bar"></div>
               <div class="content-card">
                 <div class="title">BrowserStack Toolkit</div>
@@ -363,16 +355,16 @@
                   devices and browsers.
                 </div>
               </div>
+              <a
+                href="https://chromewebstore.google.com/detail/browserstack-accessibilit/fmkhjeeeojocenbconhndpiohohajokn"
+                class="button-card"
+              >
+                BrowserStack Download
+              </a>
             </div>
-            <a
-              href="https://chromewebstore.google.com/detail/browserstack-accessibilit/fmkhjeeeojocenbconhndpiohohajokn"
-              class="button-card"
-            >
-              BrowserStack Download
-            </a>
           </div>
-          <div class="card">
-            <div>
+          <div class="col-sm-4">
+            <div class="card">
               <div class="top-bar"></div>
               <div class="content-card">
                 <div class="title">AChecker+</div>
@@ -382,17 +374,30 @@
                   ensure compliance with accessibility standards.
                 </div>
               </div>
+              <a
+                href="https://achecks.org/achecker/#google_vignette"
+                class="button-card"
+              >
+                AChecker+ Tool
+              </a>
             </div>
-
-            <a
-              href="https://achecks.org/achecker/#google_vignette"
-              class="button-card"
-            >
-              AChecker+ Tool
-            </a>
           </div>
+        </div>
+        <div class="bottom-list">
+          <a href="#back-to-top"
+            ><span class="material-symbols-outlined">
+arrow_circle_up
+</span> Back to
+            Top</a
+          >
         </div>
       </div>
     </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   </body>
 </html>

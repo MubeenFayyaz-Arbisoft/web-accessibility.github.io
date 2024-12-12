@@ -1,0 +1,83 @@
+//Base Html font
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 1.6rem;
+  line-height: 25px;
+}
+
+a {
+  letter-spacing: 0.4px;
+  display: inline-block;
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-decoration: underline;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.white-color {
+  color: $white;
+}
+.dark-color{
+  color: $primary-color;
+}
+.large-heading {
+  font-size: 3.5rem;
+  line-height: 40px;
+}
+
+.plain-text, .complaince-list {
+  font-size: 1.8rem;
+  line-height: 35px;
+}
+.main-heading {
+  font-size: 3.5rem;
+  font-weight: 600;
+  background-image: linear-gradient(
+    -90deg,
+    #000000 0,
+    #254d79 30%,
+    #2b7b94 50%,
+    #783381 70%,
+    $secondary-color 90%,
+    $secondary-color 100%
+  );
+  line-height: 45px;
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.sub-title {
+  font-weight: 600;
+  background-image: linear-gradient(
+    -90deg,
+    #000000 0,
+    #35c3ff 30%,
+    #2b7b94 50%,
+    #2a9d36 70%,
+    $secondary-color 90%,
+    $secondary-color 100%
+  );
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+  background-image: none;
+  background-color: $black;
+  -webkit-text-fill-color: unset;
+  margin: 30px 0 14px 0;
+  a{
+    color: $link-color;
+    display: flex;
+    text-decoration: none;
+    align-self: center;
+  }
+}
+

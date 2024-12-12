@@ -1,19 +1,13 @@
-<!-- Issue Note -->
-<!-- Point 1 - Never use Block Element in Inline Element otherwise the voiceover will not read the description of the image -->
-<!-- Point 2 - Always use <figcaption> for captioning <figure> -->
+
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      .logo-image {
-        width: 100px;
-        height: 100px;
-      }
-    </style>
+    <title>Web Accessibility</title>
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/global.css" />
   </head>
   <body>
     
@@ -34,7 +28,7 @@
           <figure>
             <img src="Images/clearesult-logo.png" alt="clearesult-logo" />
           </figure>
-          <p>Engineered to consistently spark learner engagement.</p>
+          <p class="plain-text">Engineered to consistently spark learner engagement.</p>
         </a>
       </li>
 
@@ -49,5 +43,11 @@
         </a>
       </li>
     </ul>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   </body>
 </html>
