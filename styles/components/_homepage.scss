@@ -10,11 +10,13 @@ body {
 .link-color-black {
   color: $primary-color;
 }
-.logo-image {
-  width: 180px;
+.logo {
+  &__image {
+    width: 180px;
+  }
     &:focus {
       background-color: transparent;
-  }
+    }
 }
 .sidebar {
   top: 0;
@@ -27,8 +29,8 @@ body {
     0 0.9375rem 1.40625rem rgba(4, 9, 20, 0.03),
     0 0.25rem 0.53125rem rgba(4, 9, 20, 0.05),
     0 0.125rem 0.1875rem rgba(4, 9, 20, 0.03);
-  
-    // box-shadow:inset 0 -6px #254e7d, -11px 14px 2px 10px #636363;
+
+  // box-shadow:inset 0 -6px #254e7d, -11px 14px 2px 10px #636363;
   border-right: 1px solid #dddddd;
 }
 
@@ -115,8 +117,7 @@ a.compliance-link {
   max-width: 1100px;
   width: 100%;
   border-radius: 20px;
-  margin:  50px auto;
-  
+  margin: 50px auto;
 }
 .back-link {
   background-color: $white;
