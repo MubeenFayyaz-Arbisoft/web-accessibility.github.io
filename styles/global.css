@@ -636,8 +636,15 @@ body {
   color: #25446b;
 }
 
+.logo-image {
+  width: 180px;
+}
+.logo-image:focus {
+  background-color: transparent;
+}
+
 .sidebar {
-  margin-top: 85px;
+  top: 0;
   background-color: #d7d7d7;
   max-width: 280px;
   min-width: 280px;
@@ -649,13 +656,14 @@ body {
 
 a.skip-content {
   position: absolute;
-  top: 0;
+  top: -50px;
   z-index: 1;
   color: #25446b;
   opacity: 0;
 }
 a.skip-content:focus {
   opacity: 1;
+  top: 0;
 }
 a.skip-content:focus-visible {
   opacity: 1;
@@ -666,7 +674,6 @@ a.skip-content:hover {
 
 .content {
   margin-left: 280px;
-  margin-top: 85px;
 }
 
 .link-action {
@@ -733,7 +740,7 @@ a.compliance-link {
   max-width: 1100px;
   width: 100%;
   border-radius: 20px;
-  margin: 140px auto 50px auto;
+  margin: 50px auto;
 }
 
 .back-link {
@@ -1059,10 +1066,7 @@ li.nav-item {
   box-shadow: inset 0 -7px #cdcccc, 1px 20px 0px 0 rgba(218, 228, 238, 0.1411764706);
   background-color: #d7d7d7;
   padding: 15px 30px;
-  position: fixed;
   width: 100%;
-  top: 0;
-  z-index: 1;
 }
 .internal-main-nav .logo__image {
   width: 180px;

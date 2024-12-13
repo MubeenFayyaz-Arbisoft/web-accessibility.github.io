@@ -10,8 +10,14 @@ body {
 .link-color-black {
   color: $primary-color;
 }
+.logo-image {
+  width: 180px;
+    &:focus {
+      background-color: transparent;
+  }
+}
 .sidebar {
-  margin-top: 85px;
+  top: 0;
   background-color: $sidebar-bg;
   max-width: 280px;
   min-width: 280px;
@@ -28,12 +34,13 @@ body {
 
 a.skip-content {
   position: absolute;
-  top: 0;
+  top: -50px;
   z-index: 1;
   color: $primary-color;
   opacity: 0;
   &:focus {
     opacity: 1;
+    top: 0;
   }
   &:focus-visible {
     opacity: 1;
@@ -44,7 +51,6 @@ a.skip-content {
 }
 .content {
   margin-left: 280px;
-  margin-top: 85px;
 }
 .link-action {
   font-size: 1.6rem;
@@ -109,7 +115,7 @@ a.compliance-link {
   max-width: 1100px;
   width: 100%;
   border-radius: 20px;
-  margin: 140px auto 50px auto;
+  margin:  50px auto;
   
 }
 .back-link {
