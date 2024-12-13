@@ -11,26 +11,19 @@ body {
   color: $primary-color;
 }
 .sidebar {
+  margin-top: 85px;
   background-color: $sidebar-bg;
   max-width: 280px;
   min-width: 280px;
   height: 100vh;
   position: fixed;
-  // box-shadow: 0 0.46875rem 2.1875rem rgba(4, 9, 20, 0.03),
-  //   0 0.9375rem 1.40625rem rgba(4, 9, 20, 0.03),
-  //   0 0.25rem 0.53125rem rgba(4, 9, 20, 0.05),
-  //   0 0.125rem 0.1875rem rgba(4, 9, 20, 0.03);
-    box-shadow: inset 0 -6px #254e7d, -10px -2px 7px 10px #636363;
+  box-shadow: 0 0.46875rem 2.1875rem rgba(4, 9, 20, 0.03),
+    0 0.9375rem 1.40625rem rgba(4, 9, 20, 0.03),
+    0 0.25rem 0.53125rem rgba(4, 9, 20, 0.05),
+    0 0.125rem 0.1875rem rgba(4, 9, 20, 0.03);
+  
+    // box-shadow:inset 0 -6px #254e7d, -11px 14px 2px 10px #636363;
   border-right: 1px solid #dddddd;
-}
-.logo-image {
-  width: 100%;
-  max-width: 200px;
-}
-a.logo {
-  &:focus {
-    background-color: transparent;
-  }
 }
 
 a.skip-content {
@@ -51,6 +44,7 @@ a.skip-content {
 }
 .content {
   margin-left: 280px;
+  margin-top: 85px;
 }
 .link-action {
   font-size: 1.6rem;
@@ -115,7 +109,8 @@ a.compliance-link {
   max-width: 1100px;
   width: 100%;
   border-radius: 20px;
-  margin: 50px auto;
+  margin: 140px auto 50px auto;
+  
 }
 .back-link {
   background-color: $white;

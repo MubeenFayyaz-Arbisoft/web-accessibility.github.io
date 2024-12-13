@@ -1,12 +1,16 @@
 @import "../variables/colors";
 
 .internal-main-nav {
-  box-shadow: inset 0 -7px #cdcccc, 1px 20px 100px 0 #dae4ee;
+  box-shadow: inset 0 -7px #cdcccc, 1px 20px 0px 0 #dae4ee24;
   background-color: $sidebar-bg;
   padding: 15px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
   .logo{
     &__image {
-      width: 150px;
+      width: 180px;
     }
     &:focus {
       background-color: transparent;
@@ -18,9 +22,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    &.nav-home-container{
-      justify-content: flex-end;
-    }
+  
   }
   nav {
     ul {
