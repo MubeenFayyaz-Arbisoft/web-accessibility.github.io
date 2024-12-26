@@ -4,49 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our Certifications | Web Accessibility</title>
-      <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="styles/global.css" />
   </head>
   <body>
     <header class="internal-main-nav">
       <a href="#main-content" class="skip-content">Skip to main content</a>
-      <div class="nav-container">
-      <a href="home.html" class="logo">
-        <img class="logo__image" src="assets/images/accessibility-logo.svg" alt="logo">
-      </a>
-      <nav>
-        <ul>
-          <li>
-            <a  href="about-us.html"> About Us</a>
-          </li>
-          <li>
-            <a  href="all-tools.html">All Tools</a>
-          </li>
-          <li>
-            <a href="best-reference-links.html">Best Reference Links</a>
-          </li>
-          <li>
-            <a class="active" href="our-certfications.html">Our Certifications</a>
-          </li>
-          <li>
-            <a  href="support.html">Support</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+      <div class="nav-container internal-page-header">
+        <a href="home.html" class="logo">
+          <img
+            class="logo__image"
+            src="assets/images/accessibility-logo.svg"
+            alt="logo"
+          />
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="about-us.html"> About Us</a>
+            </li>
+            <li>
+              <a href="all-tools.html">All Tools</a>
+            </li>
+            <li>
+              <a href="best-reference-links.html">Best Reference Links</a>
+            </li>
+            <li>
+              <a class="active" href="our-certfications.html"
+                >Our Certifications</a
+              >
+            </li>
+            <li>
+              <a href="support.html">Support</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main class="main-content" id="back-to-top">
+    <main class="main-content" id="scroll-top">
       <div class="text-center contianer-div position-relative">
         <div
           class="text-start position-absolute"
           style="top: -10px; left: 40px"
         >
-          <a
-            class="back-link"
-            href="home.html"
-          >
-            Back Home</a
-          >
+          <a class="back-link" href="home.html"> Back Home</a>
         </div>
         <h1 class="text-center white-color large-heading">
           Team Certifications
@@ -61,20 +66,63 @@
 
               <div class="content-card">
                 <div class="card-img">
-                  <img
-                    src="assets/certificates/mubeen-certificate.png"
-                    alt=" Mubeen Certfications"
-                  />
-                </div>
-                <div class="pill-wrapper">
-                  <div class="pills round" aria-label="Section 508 Passed">
-                    Section 508
+                  <div class="tab-content" id="myTabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="mubeen-section-508"
+                      role="tabpanel"
+                    >
+                      <img
+                        src="assets/certificates/mubeen-certificate.png"
+                        alt=" Mubeen Certfications"
+                      />
+                    </div>
+                    <div class="tab-pane fade" id="mubeen-edx" role="tabpanel">
+                      <img
+                        src="assets/certificates/mubeen-certificate.png"
+                        alt=" Mubeen Certfications"
+                      />
+                    </div>
+                    <div class="tab-pane fade" id="mubeen-udacity" role="tabpanel">
+                      <img
+                        src="assets/certificates/mubeen-certificate.png"
+                        alt=" Mubeen Certfications"
+                      />
+                    </div>
                   </div>
-                  <div class="pills round" aria-label="Udacity Passed">
-                    Udacity
-                  </div>
-                  <div class="pills round" aria-label="CPACC Passed">CPACC</div>
                 </div>
+                <ul class="nav nav-pills" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <a
+                      class="nav-link active"
+                      id="mubeen-section-508-tab"
+                      data-bs-toggle="pill"
+                      href="#mubeen-section-508"
+                      role="tab"
+                      >Section 508</a
+                    >
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a
+                      class="nav-link"
+                    id="mubeen-edx-tab"
+                      data-bs-toggle="pill"
+                      href="#mubeen-edx"
+                      role="tab"
+                      >Edx</a
+                    >
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a
+                      class="nav-link"
+                      id="mubeen-udacity-tab"
+                      data-bs-toggle="pill"
+                      href="#mubeen-udacity"
+                      role="tab"
+                      >Udacity</a
+                    >
+                  </li>
+                </ul>
                 <div class="title">
                   <span
                     title="Frontend HTML Developer & Certified Web Accessibility Specialist"
@@ -90,20 +138,63 @@
 
               <div class="content-card">
                 <div class="card-img">
-                  <img
-                    src="assets/certificates/mubeen-certificate.png"
-                    alt=" Mubeen Certfications"
-                  />
-                </div>
-                <div class="pill-wrapper">
-                  <div class="pills round" aria-label="Section 508 Passed">
-                    Section 508
+                  <div class="tab-content" id="myTabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="home"
+                      role="tabpanel"
+                    >
+                      <img
+                        src="assets/certificates/mubeen-certificate.png"
+                        alt=" Mubeen Certfications"
+                      />
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel">
+                      <img
+                        src="assets/certificates/mubeen-certificate.png"
+                        alt=" Mubeen Certfications"
+                      />
+                    </div>
+                    <div class="tab-pane fade" id="messages" role="tabpanel">
+                      <img
+                        src="assets/certificates/mubeen-certificate.png"
+                        alt=" Mubeen Certfications"
+                      />
+                    </div>
                   </div>
-                  <div class="pills round" aria-label="Udacity Passed">
-                    Udacity
-                  </div>
-                  <div class="pills round" aria-label="CPACC Passed">CPACC</div>
                 </div>
+                <ul class="nav nav-pills" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <a
+                      class="nav-link active"
+                      id="home-tab"
+                      data-bs-toggle="pill"
+                      href="#home"
+                      role="tab"
+                      >Section 508</a
+                    >
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a
+                      class="nav-link"
+                      id="profile-tab"
+                      data-bs-toggle="pill"
+                      href="#profile"
+                      role="tab"
+                      >Edx</a
+                    >
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a
+                      class="nav-link"
+                      id="messages-tab"
+                      data-bs-toggle="pill"
+                      href="#messages"
+                      role="tab"
+                      >Udacity</a
+                    >
+                  </li>
+                </ul>
                 <div class="title">
                   <span
                     title="Frontend HTML Developer & Certified Web Accessibility Specialist"
@@ -113,38 +204,13 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="card card-pillsWraper">
-              <div class="top-bar" aria-hidden="false"></div>
-
-              <div class="content-card">
-                <div class="card-img">
-                  <img
-                    src="assets/certificates/jamil-trusted-tester-certification.jpg"
-                    alt=" Mubeen Certfications"
-                  />
-                </div>
-                <div class="pill-wrapper">
-                  <div class="pills round" aria-label="Section 508 Passed">
-                    Section 508
-                  </div>
-                  <div class="pills round" aria-label="Udacity Passed">
-                    Udacity
-                  </div>
-                  <div class="pills round" aria-label="CPACC Passed">CPACC</div>
-                </div>
-                <div class="title">
-                  <span
-                    title="Frontend HTML Developer & Certified Web Accessibility Specialist"
-                    >Jamil Hussain</span
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
+        
         </div>
         <div class="bottom-list">
-          <a href="#back-to-top"><span class="material-symbols-outlined">arrow_circle_up</span>Scroll Up</a>
+          <a href="#scroll-top"
+            ><span class="material-symbols-outlined">arrow_circle_up</span
+            >Scroll Up</a
+          >
         </div>
       </div>
     </main>

@@ -8,7 +8,7 @@
   width: 100%;
   // top: 0;
   // z-index: 1;
-  .logo{
+  .logo {
     &__image {
       width: 180px;
     }
@@ -16,14 +16,17 @@
       background-color: transparent;
     }
   }
- 
 
-  .nav-container {
+  .nav-container  {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     gap: 10px;
-  
+    padding-left: 280px;
+    &.internal-page-header {
+      justify-content: space-between;
+      padding: 0;
+    }
   }
   nav {
     ul {

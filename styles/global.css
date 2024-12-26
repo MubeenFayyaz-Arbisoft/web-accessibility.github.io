@@ -35,11 +35,16 @@ a:hover, a:focus {
 }
 
 .large-heading {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   line-height: 40px;
 }
 
-.plain-text, .complaince-list {
+.blue-color {
+  color: #2b52cc;
+}
+
+.plain-text,
+.complaince-list {
   font-size: 1.8rem;
   line-height: 35px;
 }
@@ -47,7 +52,7 @@ a:hover, a:focus {
 .main-heading {
   font-size: 3.5rem;
   font-weight: 600;
-  background-image: linear-gradient(-90deg, #000000 0, #254d79 30%, #2b7b94 50%, #783381 70%, #643a98 90%, #643a98 100%);
+  background-image: linear-gradient(-90deg, #2b52cc 0, #254d79 30%, #2b7b94 50%, #783381 70%, #643a98 90%, #643a98 100%);
   line-height: 45px;
   background-size: 100%;
   background-repeat: repeat;
@@ -69,10 +74,132 @@ a:hover, a:focus {
   margin: 30px 0 14px 0;
 }
 .sub-title a {
-  color: #9b2318;
+  color: #2b52cc;
   display: flex;
   text-decoration: none;
   align-self: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px -3px rgba(100, 58, 152, 0.17), 0 4px 6px -4px rgba(100, 58, 152, 0);
+  margin-bottom: 30px;
+}
+.card .content-card {
+  padding: 10px;
+  min-height: 220px;
+}
+.card .content-card .description {
+  margin-top: 10px;
+  font-size: 1.7rem;
+}
+.card .content-card .title {
+  font-weight: 800;
+  text-transform: uppercase;
+  padding-top: 10px;
+  line-height: 30px;
+  font-size: 1.8rem;
+}
+.card .content-card .nav-pills {
+  background-color: transparent;
+  padding: 0 !important;
+  margin-top: 15px;
+  gap: 10px;
+  justify-content: center;
+}
+.card .content-card .nav-pills li.nav-item {
+  flex-grow: unset;
+}
+.card .content-card a.nav-link {
+  border-radius: 4px;
+  font-size: 1.4rem !important;
+  padding: 1px 5px !important;
+  background-color: #b1cae3 !important;
+  color: #25446b;
+  border: unset !important;
+  opacity: 1 !important;
+  margin: 0 !important;
+  width: auto !important;
+  height: auto !important;
+  text-indent: unset !important;
+}
+.card .content-card a.nav-link.active, .card .content-card a.nav-link:hover, .nav-link .card .content-card a.nav-link:focus {
+  color: black !important;
+}
+.card .content-card a.nav-link:focus {
+  outline: 2px dotted;
+  outline-offset: 2px;
+  outline-color: #9b2318;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+  background-color: #9b2318;
+}
+.card .content-card .card-img img {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #25446b;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.code-toolbar {
+  position: relative;
+}
+.code-toolbar .toolbar {
+  position: absolute;
+  top: 0.5em;
+  right: 1em;
+  transition: opacity 0.3s ease-in-out;
+}
+.code-toolbar .toolbar .copy-text-btn {
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+  padding: 5px 12px;
+  background-color: #304e75;
+  border-radius: 4px;
+}
+.code-toolbar .code-text {
+  padding: 1.5rem;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  color: #000;
+  width: 100%;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.demo-figure .demo-img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  margin: 15px auto;
+  display: block;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+}
+.demo-figure figcaption {
+  font-size: 16px;
+  display: flex;
+  font-family: ui-monospace;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+  background-color: #f4f4f4;
+  border-radius: 4px;
+  padding: 5px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 800px;
+  border: 1px solid #25446b;
 }
 
 .formlabel {
@@ -641,6 +768,12 @@ body {
 }
 .logo:focus {
   background-color: transparent;
+  outline: 2px dotted;
+  outline-offset: 2px;
+  outline-color: #9b2318;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+  color: #fff !important;
+  border-radius: 4px;
 }
 
 .sidebar {
@@ -726,7 +859,7 @@ a.compliance-link {
 }
 
 .contianer-div {
-  max-width: 1100px;
+  max-width: 900px;
   width: 100%;
   text-align: center;
   background-color: #25446b;
@@ -737,7 +870,7 @@ a.compliance-link {
 
 .main-content {
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
-  max-width: 1100px;
+  max-width: 900px;
   width: 100%;
   border-radius: 20px;
   margin: 50px auto;
@@ -763,50 +896,6 @@ a.compliance-link {
 
 .container-body {
   padding: 40px;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
-  position: relative;
-  border-radius: 10px;
-  box-shadow: 0 10px 15px -3px rgba(100, 58, 152, 0.17), 0 4px 6px -4px rgba(100, 58, 152, 0);
-  padding-bottom: 15px;
-  margin-bottom: 30px;
-}
-
-.content-card {
-  padding: 10px;
-  min-height: 220px;
-}
-.content-card .description {
-  margin-top: 10px;
-  font-size: 1.7rem;
-}
-.content-card .title {
-  font-weight: 800;
-  text-transform: uppercase;
-  margin-top: 10px;
-  line-height: 30px;
-  font-size: 2.2rem;
-}
-
-.card-img img {
-  width: 100%;
-  border-radius: 8px;
-  border: 1px solid #25446b;
-  height: 250px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-.conten-cardt .price {
-  font-weight: 800;
-  font-size: 50px;
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.42);
 }
 
 .button-card {
@@ -907,7 +996,7 @@ a:focus .small-icon::before {
 }
 
 .demo-links {
-  color: #9b2318;
+  color: #2b52cc;
   font-weight: bold;
   padding: 1px 6px;
   font-size: 1.8rem;
@@ -1011,17 +1100,17 @@ thead.thead-dark tr th:last-child {
 }
 .nav-pills .nav-link {
   padding: 10px 20px;
-  border-bottom: 2px solid #25446b;
-  background-color: #fff;
-  color: #25446b;
+  border: 2px solid transparent;
+  background-color: white;
+  color: #000;
   border-radius: 4px;
   width: 100%;
   font-size: 2rem;
   font-weight: 700;
 }
 .nav-pills .nav-link:hover {
-  background-color: #9b2318;
-  color: #fff;
+  background-color: #2b52cc;
+  color: white;
 }
 .nav-pills .nav-link:focus {
   outline: 2px dotted;
@@ -1029,14 +1118,13 @@ thead.thead-dark tr th:last-child {
   outline-color: #9b2318;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
   color: #fff !important;
-  background-color: #9b2318;
 }
 .nav-pills .nav-link.active {
-  background-color: #9b2318;
-  border-bottom: 2px solid #25446b;
+  background-color: #000;
+  border: 2px solid #25446b;
 }
 .nav-pills .nav-link.active:hover {
-  background-color: #25446b;
+  background-color: #000;
 }
 
 li.nav-item {
@@ -1052,14 +1140,8 @@ li.nav-item {
   font-size: 1.8rem;
   display: flex;
   gap: 2px;
-  color: #9b2318;
+  color: #2b52cc;
   text-decoration: none;
-}
-
-.demo-figure .demo-img {
-  border: 1px solid #25446b;
-  border-radius: 10px;
-  max-width: 800px;
 }
 
 .internal-main-nav {
@@ -1077,8 +1159,13 @@ li.nav-item {
 .internal-main-nav .nav-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 10px;
+  padding-left: 280px;
+}
+.internal-main-nav .nav-container.internal-page-header {
+  justify-content: space-between;
+  padding: 0;
 }
 .internal-main-nav nav ul {
   display: flex;

@@ -1,62 +1,114 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Accessibility</title>
-    <link rel="shortcut icon" href="../../assets/images/accessibility-logo.svg" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="../../assets/images/favicon.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="../../styles/global.css" />
   </head>
   <body>
+    <header class="internal-main-nav">
+      <a href="#main-content" class="skip-content">Skip to main content</a>
+      <div class="nav-container internal-page-header">
+        <a href="../../home.html" class="logo">
+          <img
+            class="logo__image"
+            src="../../assets/images/accessibility-logo.svg"
+            alt="logo"
+          />
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="../../about-us.html"> About Us</a>
+            </li>
+            <li>
+              <a href="../../all-tools.html">All Tools</a>
+            </li>
+            <li>
+              <a href="../../our-certfications.html">Our Certifications</a>
+            </li>
+            <li>
+              <a href="../../support.html">Our Support</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <main class="main-content">
       <div class="text-center contianer-div position-relative">
         <div
           class="text-start position-absolute"
           style="top: -10px; left: 40px"
         >
-          <a
-          class="back-link"
-            href="../../home.html"
-          >
-            Back Home</a
-          >
+          <a class="back-link" href="../../home.html"> Back Home</a>
         </div>
-        <h1 class="text-center white-color large-heading">Table Identification Demo</h1>
+        <h1 class="text-center white-color large-heading">
+          Table Identification Demo
+        </h1>
       </div>
       <div class="container-body">
-        <p class="plain-text">Each data table has programmatic markup to identify it as a table.</p>
+        <p class="plain-text">
+          Each data table has programmatic markup to identify it as a table.
+        </p>
         <h2>Evaluate Results:</h2>
-        <p class="plain-text">If ALL of the following are TRUE, then the content PASSES:</p>
+        <p class="plain-text">
+          If ALL of the following are TRUE, then the content PASSES:
+        </p>
         <ol>
-          <li>It is possible to navigate in ANDI: tables to each data table using the ANDI Analyze Previous/Next
-            Table buttons, AND</li>
-            <li>The data table DOES NOT have an ARIA role=“presentation” assigned, AND</li>
-            <li>The data table DOES NOT have any ANDI Table alerts for incorrect use of ARIA table attributes.</li>
+          <li>
+            It is possible to navigate in ANDI: tables to each data table using
+            the ANDI Analyze Previous/Next Table buttons, AND
+          </li>
+          <li>
+            The data table DOES NOT have an ARIA role=“presentation” assigned,
+            AND
+          </li>
+          <li>
+            The data table DOES NOT have any ANDI Table alerts for incorrect use
+            of ARIA table attributes.
+          </li>
         </ol>
       </div>
       <div class="container-body">
         <div>
-            <figure class="demo-figure">
-                <img class="demo-img" src="../../assets/images/table-identification1.png" alt="Image of Andi identifying table of Weekly Schedule">
-                <figcaption><strong>Image of Andi identifying table of Weekly Schedule.</strong></figcaption>
-            
-              </figure>
+          <figure class="demo-figure">
+            <img
+              class="demo-img"
+              src="../../assets/images/table-identification1.png"
+              alt="Image of Andi identifying table of Weekly Schedule"
+            />
+            <figcaption>
+              <span class="material-symbols-outlined"> photo_camera </span>Image
+              of Andi identifying table of Weekly Schedule.
+            </figcaption>
+          </figure>
         </div>
         <div>
           <figure class="demo-figure">
-              <figcaption><strong>Image of Andi identifying table of Bus Schedule.</strong></figcaption>
-              <img class="demo-img" src="../../assets/images/table-identification2.png" alt="Image of Andi identifying table of Weekly Schedule">
+            <img
+              class="demo-img"
+              src="../../assets/images/table-identification2.png"
+              alt="Image of Andi identifying table of Weekly Schedule"
+            />
+            <figcaption>
+              <span class="material-symbols-outlined"> photo_camera </span>Image
+              of Andi identifying table of Bus Schedule.
+            </figcaption>
           </figure>
         </div>
       </div>
     </main>
     <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"
-  ></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   </body>
 </html>
