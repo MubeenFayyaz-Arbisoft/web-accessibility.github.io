@@ -5,7 +5,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Accessibility</title>
+    <title>Web Accessibility| Meaningful-image-name</title>
     <link rel="shortcut icon" href="../../assets/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../../styles/global.css" />
   </head>
@@ -34,6 +34,7 @@
       </nav>
     </div>
     </header>
+
     <main class="main-content">
       <div class="text-center contianer-div position-relative">
         <div
@@ -47,48 +48,60 @@
             Back Home</a
           >
         </div>
-        <h1 class="text-center white-color large-heading">Guideline 1.1/Meaningful-Image-Name</h1>
+        <h1 class="text-center white-color large-heading">1.1 Guideline / Meaningful Image Name</h1>
       </div>
       <div class="container-body">
-      <table border="1">
-        <caption>
-          using th as row and column headers will work.
-        </caption>
-        <tbody>
-          <tr>
-            <th>Quarter</th>
-            <th>Apples</th>
-            <th>Oranges</th>
-            <th>Bananas</th>
-          </tr>
-          <tr>
-            <th>Q1</th>
-            <td>100</td>
-            <td>200</td>
-            <td>250</td>
-          </tr>
-          <tr>
-            <th>Q2</th>
-            <td>120</td>
-            <td>180</td>
-            <td>230</td>
-          </tr>
-          <tr>
-            <th>Q3</th>
-            <td>110</td>
-            <td>120</td>
-            <td>210</td>
-          </tr>
-          <tr>
-            <th>Q4</th>
-            <td>140</td>
-            <td>150</td>
-            <td>300</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+        <div>
+          <figure class="demo-figure">
+            <img
+              class="demo-img"
+              src="../../assets/images/meaningful_img1.png"
+              alt="Image showing Arbisoft Logo as meaningful image"
+            />
+            <figcaption>
+              <span class="material-symbols-outlined"> photo_camera </span> Fig:
+              Arbisoft Logo
+            </figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure class="demo-figure">
+            <img
+              class="demo-img"
+              src="../../assets/images/meaningful_img2.png"
+              alt="Image showing Hamburger Menu as meaningful Image"
+            />
+            <figcaption>
+              <span class="material-symbols-outlined"> photo_camera </span> Fig:
+              Hamburger Menu Icon
+            </figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure class="demo-figure">
+            <img
+              class="demo-img"
+              src="../../assets/images/meaningful_img3.png"
+              alt="Image showing Laces tying instructions as meaningful image"
+            />
+            <figcaption>
+              <span class="material-symbols-outlined"> photo_camera </span> Fig:
+              Laces tying instructions
+            </figcaption>
+          </figure>
+        </div>
+        <div>
+          <h3>Usage in HTML:</h3>
+          <p class="plain-text">
+            (&lt;img&gt;) tag and (&lt;alt&gt;) attribute to give text to meaningful description.
+            (&lt;figure&gt;) tag and (&lt;figcaption&gt;) also help AT/ screen reader identify images,
+            giving an (&lt;alt&gt;) in it is also valid as (&lt;figcaption&gt;) will help read text within it.
+            
+          <h3>Resourceful link:</h3>
+          <a href="https://accessibilite.public.lu/fr/rgaa4.1/criteres.html#crit-1-1
+          ">Digital Accessibility Portal</a>  
     </main>
+
     <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
