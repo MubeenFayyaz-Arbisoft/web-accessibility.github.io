@@ -193,8 +193,8 @@ a {
   .demo-img {
     border-radius: 10px;
     width: 100%;
-    height: auto;
-    max-width: 800px;
+    height: 400px;
+    object-fit: contain;
     margin: 15px auto;
     display: block;
 
