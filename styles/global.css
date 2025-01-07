@@ -180,8 +180,9 @@ a:hover, a:focus {
 .demo-figure .demo-img {
   border-radius: 10px;
   width: 100%;
-  height: auto;
-  max-width: 800px;
+  height: 400px;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin: 15px auto;
   display: block;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
