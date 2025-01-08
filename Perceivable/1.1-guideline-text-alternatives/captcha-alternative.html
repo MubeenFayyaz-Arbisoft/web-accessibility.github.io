@@ -2,10 +2,11 @@
 
 <!DOCTYPE html>
 <html lang="en">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Accessibility | CAPTCHA alternative</title>
+    <title>CAPTCHA alternative | Web Accessibility| </title>
     <link
       rel="shortcut icon"
       href="../../assets/images/favicon.png"
@@ -70,7 +71,7 @@
           <h3>Usage of audio CAPTCHA in HTML:</h3>
           <p class="plain-text">
             <h4>Explanation:</h4>
-            <br><b>Audio CAPTCHA (&lt;audio&gt; tag):</b>
+            <b>Audio CAPTCHA (&lt;audio&gt; tag):</b>
             <br>
             The &lt;audio&gt; element allows users to listen to an audio CAPTCHA challenge.
             The src="captcha-audio.mp3" points to the audio file that contains the CAPTCHA challenge.
@@ -135,13 +136,23 @@
               As Keyboard can focus on the checkbox and check it, the alternative is to
               provide an image along with an audio to speak out the written text. Which in result will help 
               low vision people to hear the text written and overcome the CAPTCHA.
+              Along with the reCAPTCHA checkbox and alternative audio is given,
+              where you can hear the written text and type it in the text box.
+              To create your own reCaptcha please visit: <a href="https://www.google.com/recaptcha/admin/site/716208066/setup
+              ">reCAPTCHA site link</a>  
             </p>
 
             <!-- code structure start -->
            <div class="code-toolbar">
             <pre class="code-text" id="reCAPTCHA-image">
               <code class="language-css">
-                &lt;&gt; 
+                &lt;---Add "script src="" above the &lt;head&gt; tag in html for the reCaptcha block to appear---&gt;
+                &lt;script src="https://www.google.com/recaptcha/api.js" async defer&gt;&lt;/script&gt;
+                <br>
+
+                &lt;div class="g-recaptcha" data-sitekey="your_site_key"&gt;&lt;/div&gt;
+                &lt;---The data-siteKey is generated from Google reCaptcha insert this within your form div---&gt;
+                 
                 </code>    
             </pre>
             <div class="toolbar">
@@ -157,7 +168,7 @@
               <img
                 class="demo-img"
                 src="../../assets/images/multipl_img_listen.png"
-                alt="Image showing Laces tying instructions as meaningful image"
+                alt="Image showing multiple image with checkboxes for CAPTCHA"
               />
               <figcaption>
                 <span class="material-symbols-outlined"> photo_camera </span> Fig:
@@ -168,7 +179,7 @@
             <p class="plain-text">
               <h4>Explanation:</h4>
               For each checkbox given, an alternative text should be provided on 
-              ovice over (which should describe the image) to help low vision people help pass the CAPTCHA
+              voice over (which should describe the image) to help low vision people help pass the CAPTCHA
               of multiple image selection.
             </p>
           
